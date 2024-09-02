@@ -17,4 +17,5 @@ urlpatterns = [
     path('toys/<int:pk>/delete', views.ToyDelete.as_view(), name="toy-delete"),
     path('cats/<int:cat_id>/associate-toy/<int:toy_id>', views.associate_toy, name='associate-toy'),
     path('cats/<int:cat_id>/remove-toy/<int:toy_id>/', views.remove_toy, name='remove-toy'),
+    path('accounts/signup/', views.signup, name='signup')
 ]
