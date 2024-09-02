@@ -28,7 +28,7 @@
                 <li><a href="{% url "toy-create" %}">Add a Toy</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li>
-                    <form action="{% url "admin:logout" %}" method="post" id="logout-form">
+                    <form action="{% url "logout" %}" method="post" id="logout-form">
                         {% csrf_token %}
                         <button type="submit">Log out</button>
                     </form>
